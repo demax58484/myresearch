@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name – Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 2rem 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.2rem 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: #ffffff;
+    }
+    nav {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #2563eb;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+    }
+    .pub-item, .proj-item {
+      margin-bottom: 0.9rem;
+    }
+    .pub-title {
+      font-weight: 600;
+    }
+    .pub-meta {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    a {
+      color: #2563eb;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.4rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 999px;
+      background: #e5f0ff;
+      font-size: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 1.5rem 0 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Position, Department of Physics, University / Institute</p>
+      <p>Email: <a href="mailto:you@example.com" style="color:#bfdbfe;">you@example.com</a></p>
+      <p>
+        <a href="https://scholar.google.com/..." style="color:#bfdbfe;">Google Scholar</a> ·
+        <a href="https://orcid.org/..." style="color:#bfdbfe;">ORCID</a> ·
+        <a href="CV.pdf" style="color:#bfdbfe;">CV (PDF)</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p>
+        Brief 2–3 sentence overview of your research. For example:
+        I study quantum many-body physics and quantum information, with a focus on
+        driven systems, time crystals, and quantum error correction.
+      </p>
+      <p>
+        <span class="tag">Quantum many-body</span>
+        <span class="tag">Floquet systems</span>
+        <span class="tag">Quantum error correction</span>
+        <span class="tag">Cold atoms</span>
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          Paper title goes here
+        </div>
+        <div class="pub-meta">
+          Your Name, Coauthor A, Coauthor B · Journal / arXiv:XXXX.XXXXX · Year
+        </div>
+        <div>
+          Short 1–2 sentence summary of the main result, in plain language.
+          <a href="https://arxiv.org/abs/XXXX.XXXXX">[arXiv]</a>
+          <a href="https://doi.org/...">[Journal]</a>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">
+          Second paper title
+        </div>
+        <div class="pub-meta">
+          Your Name et al. · Journal / arXiv · Year
+        </div>
+        <div>
+          Short summary line.
+          <a href="https://arxiv.org/...">[arXiv]</a>
+        </div>
+      </div>
+
+      <!-- Add more items as needed -->
+    </section>
+
+    <section id="projects">
+      <h2>Current Projects</h2>
+
+      <div class="proj-item">
+        <strong>Project name (e.g. Interacting Quantum Kicked Rotors)</strong><br />
+        1–2 sentences describing what you are doing and why it matters.
+      </div>
+
+      <div class="proj-item">
+        <strong>Project name (e.g. Cavity-Induced Time Crystals)</strong><br />
+        Another short description.
+      </div>
+
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching & Mentoring</h2>
+      <p>
+        List a few relevant items, e.g. courses you TA’d or taught, mentoring of students, outreach.
+      </p>
+      <ul>
+        <li>TA, Course code – Course name, Year/Term.</li>
+        <li>Mentoring undergraduate research projects on ...</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Department of Physics<br />
+        University / Institute<br />
+        City, Country
+      </p>
+      <p>
+        Email: <a href="mailto:you@example.com">you@example.com</a><br />
+        Office: room / building (optional)
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> Your Name.
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
