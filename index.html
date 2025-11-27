@@ -14,8 +14,19 @@
       color: #222;
       background: #fafafa;
     }
-    header {
+    /* header {
       background: #1f2933;
+      color: #fff;
+      padding: 2rem 1.5rem;
+    } */  
+    .header-inner {
+      max-width: 900px;   /* same width as .container */
+      margin: 0 auto;     /* center it */
+      padding: 2rem 1.5rem;
+      text-align: right;
+    }
+    header {
+      background: #1f2933 url('banner.jpg') center/cover no-repeat;
       color: #fff;
       padding: 2rem 1.5rem;
     }
@@ -84,9 +95,10 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="header-inner">
       <h1>Mengxin Du</h1>
-      <p>PhD in Physics, Department of Physics, The University of Texas at Dallas</p>
+      <p>PhD in Physics</p>
+      <p>The University of Texas at Dallas</p>
       <p>Email: <a href="mailto:Mengxin.Du@UTDallas.edu" style="color:#bfdbfe;">Mengxin.Du@UTDallas.edu</a></p>
       <p>
         <a href="https://scholar.google.com/scholar?hl=en&q=Mengxin+Du" style="color:#bfdbfe;">Google Scholar</a> ·
@@ -100,8 +112,8 @@
   <div class="container">
     <nav>
       <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
       <a href="#teaching">Teaching</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -125,6 +137,44 @@
         <span class="tag">Atomtronics</span>
       </p>
     </section>
+
+    <section id="projects">
+      <h2>Current Projects</h2>
+
+      <div class="proj-item">
+        <strong>Interacting Anderson transitions in kicked Bose–Einstein condensates</strong><br />
+        I investigate how interactions and trapping potentials reshape dynamical
+        Anderson metal–insulator transitions in kicked quantum gases, connecting
+        realistic simulations to current cold-atom experiments.
+      </div>
+
+      <div class="proj-item">
+        <strong>Cavity-induced time crystals with time-independent Hamiltonians</strong><br />
+        <a href="cavity-time-crystal-slides.pdf" target="_blank" rel="noopener">
+          Slides (PDF)
+        </a><br />
+        I study spin chains in optical cavities that realize time-crystal behavior
+        using an effectively time-independent Hamiltonian, mapping Floquet physics
+        into an extended-zone cavity picture with experimentally accessible signals.
+      </div>
+
+      <div class="proj-item">
+        <strong>Robust quantum codes from Knill–Laflamme signature vectors</strong><br />
+        I develop optimization and geometric tools on Stiefel manifolds to search
+        quantum code spaces using Knill–Laflamme coefficients, with the goal of
+        identifying robust, symmetry-structured codes.
+      </div>
+
+      <div class="proj-item">
+        <strong>Atomtronic transistor dynamics</strong><br />
+        I model coherent matter-wave emission in triple-well “transistor” geometries,
+        clarifying the role of resonances and interactions in controlling output
+        coherence for future atomtronic devices.
+      </div>
+
+    </section>
+
+
 
     <section id="publications">
       <h2>Selected Publications</h2>
@@ -181,39 +231,6 @@
       <!-- You can add more items or move some preprints here later -->
     </section>
 
-    <section id="projects">
-      <h2>Current Projects</h2>
-
-      <div class="proj-item">
-        <strong>Interacting Anderson transitions in kicked Bose–Einstein condensates</strong><br />
-        I investigate how interactions and trapping potentials reshape dynamical
-        Anderson metal–insulator transitions in kicked quantum gases, connecting
-        realistic simulations to current cold-atom experiments.
-      </div>
-
-      <div class="proj-item">
-        <strong>Cavity-induced time crystals with time-independent Hamiltonians</strong><br />
-        I study spin chains in optical cavities that realize time-crystal behavior
-        using an effectively time-independent Hamiltonian, mapping Floquet physics
-        into an extended-zone cavity picture with experimentally accessible signals.
-      </div>
-
-      <div class="proj-item">
-        <strong>Robust quantum codes from Knill–Laflamme signature vectors</strong><br />
-        I develop optimization and geometric tools on Stiefel manifolds to search
-        quantum code spaces using Knill–Laflamme coefficients, with the goal of
-        identifying robust, symmetry-structured codes.
-      </div>
-
-      <div class="proj-item">
-        <strong>Atomtronic transistor dynamics</strong><br />
-        I model coherent matter-wave emission in triple-well “transistor” geometries,
-        clarifying the role of resonances and interactions in controlling output
-        coherence for future atomtronic devices.
-      </div>
-
-    </section>
-
     <section id="teaching">
       <h2>Teaching & Mentoring</h2>
       <p>
@@ -233,7 +250,7 @@
       <p>
         Department of Physics<br />
         The University of Texas at Dallas<br />
-        Richardson, TX, USA
+        Richardson, TX, USA, 75083
       </p>
       <p>
         Email: <a href="mailto:Mengxin.Du@UTDallas.edu">Mengxin.Du@UTDallas.edu</a><br />
