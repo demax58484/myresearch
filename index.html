@@ -19,6 +19,17 @@
       color: #fff;
       padding: 2rem 1.5rem;
     } */  
+    .page {
+      max-width: 900px;   /* same as .container */
+      margin: 0 auto;     /* center on page */
+    }
+
+    /* header keeps the banner image, but is no longer full-width */
+    header {
+      background: #1f2933 url('banner.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 2rem 1.5rem;
+    }
     .header-inner {
       max-width: 900px;   /* same width as .container */
       margin: 0 auto;     /* center it */
@@ -93,180 +104,180 @@
   </style>
 </head>
 <body>
+  <div class="page">
+    <header>
+      <div class="header-inner">
+        <h1>Mengxin Du</h1>
+        <p>PhD in Physics</p>
+        <p>The University of Texas at Dallas</p>
+        <p>Email: <a href="mailto:Mengxin.Du@UTDallas.edu" style="color:#bfdbfe;">Mengxin.Du@UTDallas.edu</a></p>
+        <p>
+          <a href="https://scholar.google.com/scholar?hl=en&q=Mengxin+Du" style="color:#bfdbfe;">Google Scholar</a> ·
+          <a href="https://orcid.org/0009-0003-8932-7295" style="color:#bfdbfe;">ORCID</a> ·
+          <a href="https://www.linkedin.com/in/mengxin-du-67aa49337" style="color:#bfdbfe;">LinkedIn</a> ·
+          <a href="CV.pdf" style="color:#bfdbfe;">CV (PDF)</a>
+        </p>
+      </div>
+    </header>
 
-  <header>
-    <div class="header-inner">
-      <h1>Mengxin Du</h1>
-      <p>PhD in Physics</p>
-      <p>The University of Texas at Dallas</p>
-      <p>Email: <a href="mailto:Mengxin.Du@UTDallas.edu" style="color:#bfdbfe;">Mengxin.Du@UTDallas.edu</a></p>
-      <p>
-        <a href="https://scholar.google.com/scholar?hl=en&q=Mengxin+Du" style="color:#bfdbfe;">Google Scholar</a> ·
-        <a href="https://orcid.org/0009-0003-8932-7295" style="color:#bfdbfe;">ORCID</a> ·
-        <a href="https://www.linkedin.com/in/mengxin-du-67aa49337" style="color:#bfdbfe;">LinkedIn</a> ·
-        <a href="CV.pdf" style="color:#bfdbfe;">CV (PDF)</a>
-      </p>
+    <div class="container">
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <p>
+          I study quantum many-body physics and quantum information, with a focus on
+          driven cold-atom systems, time crystals, and quantum error correction.
+          My work combines realistic modeling of cold-atom experiments with
+          mathematical tools for understanding robustness and phases of matter in
+          out-of-equilibrium systems.
+        </p>
+        <p>
+          <span class="tag">Quantum many-body</span>
+          <span class="tag">Cold atoms</span>
+          <span class="tag">Floquet / kicked systems</span>
+          <span class="tag">Time crystals</span>
+          <span class="tag">Quantum error correction</span>
+          <span class="tag">Quantum codes</span>
+          <span class="tag">Atomtronics</span>
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Current Projects</h2>
+
+        <div class="proj-item">
+          <strong>Interacting Anderson transitions in kicked Bose–Einstein condensates</strong><br />
+          I investigate how interactions and trapping potentials reshape dynamical
+          Anderson metal–insulator transitions in kicked quantum gases, connecting
+          realistic simulations to current cold-atom experiments.
+        </div>
+
+        <div class="proj-item">
+          <strong>Cavity-induced time crystals with time-independent Hamiltonians</strong><br />
+          <a href="cavity-time-crystal-slides.pdf" target="_blank" rel="noopener">
+            Slides (PDF)
+          </a><br />
+          I study spin chains in optical cavities that realize time-crystal behavior
+          using an effectively time-independent Hamiltonian, mapping Floquet physics
+          into an extended-zone cavity picture with experimentally accessible signals.
+        </div>
+
+        <div class="proj-item">
+          <strong>Robust quantum codes from Knill–Laflamme signature vectors</strong><br />
+          I develop optimization and geometric tools on Stiefel manifolds to search
+          quantum code spaces using Knill–Laflamme coefficients, with the goal of
+          identifying robust, symmetry-structured codes.
+        </div>
+
+        <div class="proj-item">
+          <strong>Atomtronic transistor dynamics</strong><br />
+          I model coherent matter-wave emission in triple-well “transistor” geometries,
+          clarifying the role of resonances and interactions in controlling output
+          coherence for future atomtronic devices.
+        </div>
+
+      </section>
+
+
+
+      <section id="publications">
+        <h2>Selected Publications</h2>
+
+        <div class="pub-item">
+          <div class="pub-title">
+            Many-Body Anderson Metal-Insulator Transition using Kicked Quantum Gases
+          </div>
+          <div class="pub-meta">
+            Jun Hui See Toh, <strong>Mengxin Du</strong>, Xinxin Tang, Ying Su, Tristan Rojo,
+            Carson O. Patterson, Nicolas R. Williams, Chuanwei Zhang, and Subhadeep Gupta ·
+            arXiv:2305.14817 · 2023
+          </div>
+          <div>
+            Demonstrates a synthetic many-body Anderson metal–insulator transition in
+            kicked cold-atom gases and maps out the phase diagram directly connected
+            to ongoing experiments.
+            <a href="https://arxiv.org/abs/2305.14817">[arXiv]</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">
+            Coherent Matter Wave Emission from an Atomtronic Transistor
+          </div>
+          <div class="pub-meta">
+            Sasanka Dowarah, <strong>Mengxin Du</strong>, Alan Zanders, Shengwang Du,
+            Michael Kolodrubetz, and Chuanwei Zhang · arXiv:2510.03398 · 2025 (preprint)
+          </div>
+          <div>
+            Studies coherent transport in a triple-well Bose–Einstein condensate,
+            showing transistor-like behavior and identifying how interaction strength
+            controls matter-wave coherence.
+            <a href="https://arxiv.org/abs/2510.03398">[arXiv]</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">
+            Characterizing Quantum Codes via the Coefficients in Knill–Laflamme Conditions
+          </div>
+          <div class="pub-meta">
+            <strong>Mengxin Du</strong>, Chao Zhang, Yiu-Tung Poon, and Bei Zeng ·
+            arXiv:2410.07983 · 2024 (submitted to <em>npj Quantum Information</em>)
+          </div>
+          <div>
+            Introduces a signature-vector framework for Knill–Laflamme coefficients,
+            enabling systematic exploration of quantum code spaces and revealing new
+            codes and symmetry-preserving paths between known codes.
+            <a href="https://arxiv.org/abs/2410.07983">[arXiv]</a>
+          </div>
+        </div>
+
+        <!-- You can add more items or move some preprints here later -->
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching & Mentoring</h2>
+        <p>
+          I enjoy teaching and mentoring students interested in quantum physics and
+          computation.
+        </p>
+        <ul>
+          <li>Teaching Assistant, introductory physics courses, The University of Texas at Dallas (2019–2020).</li>
+          <li>Lectured and organized a class of 100+ students and managed elementary lab equipment.</li>
+          <li>Volunteer instructor, Quantum Information Summer Camp, UT Dallas (Summer 2023).</li>
+          <li>Mentored junior students and helped them adapt quickly to research in cold-atom and quantum information projects.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Department of Physics<br />
+          The University of Texas at Dallas<br />
+          Richardson, TX, USA, 75083
+        </p>
+        <p>
+          Email: <a href="mailto:Mengxin.Du@UTDallas.edu">Mengxin.Du@UTDallas.edu</a><br />
+          <!-- Office: (add room / building if you want) -->
+        </p>
+      </section>
     </div>
-  </header>
 
-  <div class="container">
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <footer>
+      &copy; <span id="year"></span> Mengxin Du.
+    </footer>
 
-    <section id="research">
-      <h2>Research Interests</h2>
-      <p>
-        I study quantum many-body physics and quantum information, with a focus on
-        driven cold-atom systems, time crystals, and quantum error correction.
-        My work combines realistic modeling of cold-atom experiments with
-        mathematical tools for understanding robustness and phases of matter in
-        out-of-equilibrium systems.
-      </p>
-      <p>
-        <span class="tag">Quantum many-body</span>
-        <span class="tag">Cold atoms</span>
-        <span class="tag">Floquet / kicked systems</span>
-        <span class="tag">Time crystals</span>
-        <span class="tag">Quantum error correction</span>
-        <span class="tag">Quantum codes</span>
-        <span class="tag">Atomtronics</span>
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Current Projects</h2>
-
-      <div class="proj-item">
-        <strong>Interacting Anderson transitions in kicked Bose–Einstein condensates</strong><br />
-        I investigate how interactions and trapping potentials reshape dynamical
-        Anderson metal–insulator transitions in kicked quantum gases, connecting
-        realistic simulations to current cold-atom experiments.
-      </div>
-
-      <div class="proj-item">
-        <strong>Cavity-induced time crystals with time-independent Hamiltonians</strong><br />
-        <a href="cavity-time-crystal-slides.pdf" target="_blank" rel="noopener">
-          Slides (PDF)
-        </a><br />
-        I study spin chains in optical cavities that realize time-crystal behavior
-        using an effectively time-independent Hamiltonian, mapping Floquet physics
-        into an extended-zone cavity picture with experimentally accessible signals.
-      </div>
-
-      <div class="proj-item">
-        <strong>Robust quantum codes from Knill–Laflamme signature vectors</strong><br />
-        I develop optimization and geometric tools on Stiefel manifolds to search
-        quantum code spaces using Knill–Laflamme coefficients, with the goal of
-        identifying robust, symmetry-structured codes.
-      </div>
-
-      <div class="proj-item">
-        <strong>Atomtronic transistor dynamics</strong><br />
-        I model coherent matter-wave emission in triple-well “transistor” geometries,
-        clarifying the role of resonances and interactions in controlling output
-        coherence for future atomtronic devices.
-      </div>
-
-    </section>
-
-
-
-    <section id="publications">
-      <h2>Selected Publications</h2>
-
-      <div class="pub-item">
-        <div class="pub-title">
-          Many-Body Anderson Metal-Insulator Transition using Kicked Quantum Gases
-        </div>
-        <div class="pub-meta">
-          Jun Hui See Toh, <strong>Mengxin Du</strong>, Xinxin Tang, Ying Su, Tristan Rojo,
-          Carson O. Patterson, Nicolas R. Williams, Chuanwei Zhang, and Subhadeep Gupta ·
-          arXiv:2305.14817 · 2023
-        </div>
-        <div>
-          Demonstrates a synthetic many-body Anderson metal–insulator transition in
-          kicked cold-atom gases and maps out the phase diagram directly connected
-          to ongoing experiments.
-          <a href="https://arxiv.org/abs/2305.14817">[arXiv]</a>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">
-          Coherent Matter Wave Emission from an Atomtronic Transistor
-        </div>
-        <div class="pub-meta">
-          Sasanka Dowarah, <strong>Mengxin Du</strong>, Alan Zanders, Shengwang Du,
-          Michael Kolodrubetz, and Chuanwei Zhang · arXiv:2510.03398 · 2025 (preprint)
-        </div>
-        <div>
-          Studies coherent transport in a triple-well Bose–Einstein condensate,
-          showing transistor-like behavior and identifying how interaction strength
-          controls matter-wave coherence.
-          <a href="https://arxiv.org/abs/2510.03398">[arXiv]</a>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">
-          Characterizing Quantum Codes via the Coefficients in Knill–Laflamme Conditions
-        </div>
-        <div class="pub-meta">
-          <strong>Mengxin Du</strong>, Chao Zhang, Yiu-Tung Poon, and Bei Zeng ·
-          arXiv:2410.07983 · 2024 (submitted to <em>npj Quantum Information</em>)
-        </div>
-        <div>
-          Introduces a signature-vector framework for Knill–Laflamme coefficients,
-          enabling systematic exploration of quantum code spaces and revealing new
-          codes and symmetry-preserving paths between known codes.
-          <a href="https://arxiv.org/abs/2410.07983">[arXiv]</a>
-        </div>
-      </div>
-
-      <!-- You can add more items or move some preprints here later -->
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching & Mentoring</h2>
-      <p>
-        I enjoy teaching and mentoring students interested in quantum physics and
-        computation.
-      </p>
-      <ul>
-        <li>Teaching Assistant, introductory physics courses, The University of Texas at Dallas (2019–2020).</li>
-        <li>Lectured and organized a class of 100+ students and managed elementary lab equipment.</li>
-        <li>Volunteer instructor, Quantum Information Summer Camp, UT Dallas (Summer 2023).</li>
-        <li>Mentored junior students and helped them adapt quickly to research in cold-atom and quantum information projects.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Department of Physics<br />
-        The University of Texas at Dallas<br />
-        Richardson, TX, USA, 75083
-      </p>
-      <p>
-        Email: <a href="mailto:Mengxin.Du@UTDallas.edu">Mengxin.Du@UTDallas.edu</a><br />
-        <!-- Office: (add room / building if you want) -->
-      </p>
-    </section>
+    <script>
+      // Set current year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </div>
-
-  <footer>
-    &copy; <span id="year"></span> Mengxin Du.
-  </footer>
-
-  <script>
-    // Set current year automatically
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
 </body>
 </html>
